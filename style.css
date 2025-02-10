@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    cursor: crosshair;
+    box-sizing: border-box;   
+}
+
+body{
+    overflow: hidden;  
+    min-height: 100vh;  
+
+}
+.bubble{
+    opacity: 0;
+    position: absolute;
+    border-radius: 300px;
+    background: rgb(128, 128, 18);
+    animation:anim 8s forwards;
+    filter: hue-rotate(0deg);
+}
+
+@keyframes anim {
+  to{
+      top:-250px;
+      opacity: 1;
+      filter: hue-rotate(720deg);
+      left:var(--left);
+  }  
+}
+h3{
+    font-size: 10rem;
+    text-align: center;
+    margin-top: 10px;
+    opacity: .5;
+}
