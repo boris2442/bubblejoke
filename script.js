@@ -1,5 +1,7 @@
 const counterDisplay=document.querySelector("h3");
+
 let counter=0;
+
 const bubbleMaker = ()=>{
 
     
@@ -18,8 +20,9 @@ bubble.addEventListener("click", ()=>{
     counter++
     counterDisplay.textContent=counter++;
     bubble.remove()
+
 })
-// console.log(bubble)
+
 setTimeout(()=>{
     bubble.remove()
 }, 3000)
@@ -28,6 +31,5 @@ setTimeout(()=>{
 }
 
 setInterval((bubbleMaker),1000);
-
 
 
